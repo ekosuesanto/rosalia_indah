@@ -12,7 +12,7 @@ class RosaliaApps extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Rosalia Indah Transport',
       theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
+        primarySwatch: Colors.red,
       ),
       home: HomePage(),
     );
