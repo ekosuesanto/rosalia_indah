@@ -10,7 +10,7 @@ class RosaliaApps extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Animation Samples',
+      title: 'Rosalia Indah Transport',
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
