@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import "rosaliaindahtransport/page/home_page.dart";
+import "package:rosaliaindahtransport/page/home_page.dart";
 void main(){
     runApp(const MyApps());
 }
