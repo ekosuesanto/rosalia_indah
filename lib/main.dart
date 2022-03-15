@@ -9,7 +9,7 @@ class RosaliaApps extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      elevation: 0,
+      debugShowCheckedModeBanner: false,
       title: 'Animation Samples',
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
