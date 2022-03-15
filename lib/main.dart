@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
-import "package:rosaliaindahtransport/page/home_page.dart";
-void main(){
-    runApp(const MyApps());
+import "package:indah/page/home_page.dart";
+
+void main() {
+  runApp(RosaliaApps());
 }
-class MyApps extends StatelessWidget {
-    return MaterialApp( 
-        title: "Rosalia Indah",
-        home: HomePage()
+
+class RosaliaApps extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Animation Samples',
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+      ),
+      home: HomePage(),
     );
+  }
 }
