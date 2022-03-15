@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Image.network(
           "https://upload.wikimedia.org/wikipedia/commons/5/5a/Logo_Rosalia_Indah.png",
-          height: 50,
+          height: 40,
         ),
       ),
       body: Center(
