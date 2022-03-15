@@ -11,9 +11,6 @@ class RosaliaApps extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Rosalia Indah Transport',
-      theme: ThemeData(
-        primarySwatch: Colors.red,
-      ),
       home: HomePage(),
     );
   }
