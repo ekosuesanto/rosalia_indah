@@ -11,7 +11,7 @@ class RosaliaApps extends StatelessWidget {
     return MaterialApp(
       title: 'Animation Samples',
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.deepOrange,
       ),
       home: HomePage(),
     );
