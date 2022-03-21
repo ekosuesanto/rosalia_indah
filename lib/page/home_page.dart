@@ -4,6 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:indah/page/home/discover_page.dart';
 
 class HomePage extends StatelessWidget {
+  List<int> top = <int>[];
+  List<int> bottom = <int>[
+    0
+  ];
   @override
   Widget build(BuildContext context) {
     const Key centerKey = ValueKey<String>('bottom-sliver-list');
@@ -16,11 +20,19 @@ class HomePage extends StatelessWidget {
           height: 40,
         ),
       ),
-      body: CustomScrollView(center: centerKey, slivers: <Widget>[
-        SliverList(delegate: SliverChildBuilderDelegate((BuildContext context, int index) {
-          return DiscoverPage();
-        }))
-      ]),
+      body: CustomScrollView(
+        center: centerKey,
+        slivers: <Widget>[
+          SliverList(
+            delegate: SliverChildBuilderDelegate(
+              (BuildContext context, int index) {
+                return DiscoverPage();
+              },
+              childCount: top.length,
+            ),
+          )
+        ],
+      ),
     );
   }
 }
