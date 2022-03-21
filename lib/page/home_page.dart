@@ -16,16 +16,17 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     const Key centerKey = ValueKey<String>('bottom-sliver-list');
     return Scaffold(
-      appBar:PreferredSize(
-          preferredSize: Size.fromHeight(80.0), // here the desired height
-          child:AppBar(
+      appBar:
+          // here the desired height
+AppBar( 
+    toolbarHeight: 80,
         elevation: 0,
         backgroundColor: Colors.transparent,
         title: Image.network(
           "https://upload.wikimedia.org/wikipedia/commons/5/5a/Logo_Rosalia_Indah.png",
           height: 40,
         ),
-              ), 
+              
       ),
       body: SingleChildScrollView(
         child: Column(
