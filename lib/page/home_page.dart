@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
                   child: DiscoverPage(),
                 );
               },
-              childCount: bottom.length,
+              childCount: 4,
             ),
           ),
         ],
