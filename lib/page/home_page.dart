@@ -20,7 +20,9 @@ class HomePage extends StatelessWidget {
         center:centerKey,
         slivers:<Widget>[
           SliverList(delegate: SliverChildBuilderDelegate(BuildContext context, int index) {
-            return DiscoverPage();
+            return Container(
+      child: Text("Discover"),
+    );
           })
         ] 
       ),
