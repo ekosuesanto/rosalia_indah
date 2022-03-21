@@ -25,16 +25,18 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
-        child: Row(children: <Widget>[
-          Container(
-            alignment: Alignment.center,
-            child: MenuPage(),
-          ),
-          Container(
-            alignment: Alignment.center,
-            child: DiscoverPage(),
-          )
-        ]),
+        child: Column(
+          children: <Widget>[
+            Container(
+              alignment: Alignment.center,
+              child: MenuPage(),
+            ),
+            Container(
+              alignment: Alignment.center,
+              child: DiscoverPage(),
+            )
+          ],
+        ),
       ),
     );
   }
