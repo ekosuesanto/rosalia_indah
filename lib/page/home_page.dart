@@ -24,38 +24,17 @@ class HomePage extends StatelessWidget {
           height: 40,
         ),
       ),
-      body: CustomScrollView(
-        center: centerKey,
-        slivers: <Widget>[
-          SliverList(
-            key: centerKey,
-            delegate: SliverChildBuilderDelegate(
-              (BuildContext context, int index) {
-                return Container(
-                  alignment: Alignment.center,
-                  color: Colors.blue[200 + top[index] % 4 * 100],
-                  height: 100 + top[index] % 4 * 20.0,
-                  child: MenuPage(),
-                );
-              },
-              childCount: top.length,
-            ),
+      body: SingleChildScrollView(
+        child: Row(children: <Widget>[
+          Container(
+            alignment: Alignment.center,
+            child: MenuPage(),
           ),
-          SliverList(
-            key: centerKey,
-            delegate: SliverChildBuilderDelegate(
-              (BuildContext context, int index) {
-                return Container(
-                  alignment: Alignment.center,
-                  color: Colors.blue[200 + bottom[index] % 4 * 100],
-                  height: 100 + bottom[index] % 4 * 20.0,
-                  child: DiscoverPage(),
-                );
-              },
-              childCount: bottom.length,
-            ),
-          ),
-        ],
+          Container(
+            alignment: Alignment.center,
+            child: DiscoverPage(),
+          )
+        ]),
       ),
     );
   }
