@@ -6,7 +6,7 @@ import 'package:indah/page/home/discover_page.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-     const Key centerKey = ValueKey<String>('bottom-sliver-list');
+    const Key centerKey = ValueKey<String>('bottom-sliver-list');
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
@@ -16,16 +16,11 @@ class HomePage extends StatelessWidget {
           height: 40,
         ),
       ),
-      body: CustomScrollView(
-        center:centerKey,
-        slivers:<Widget>[
-          SliverList(delegate: SliverChildBuilderDelegate(BuildContext context, int index) {
-            return Container(
-      child: Text("Discover"),
-    );
-          })
-        ] 
-      ),
+      body: CustomScrollView(center: centerKey, slivers: <Widget>[
+        SliverList(delegate: SliverChildBuilderDelegate((BuildContext context, int index) {
+          return DiscoverPage();
+        }))
+      ]),
     );
   }
 }
