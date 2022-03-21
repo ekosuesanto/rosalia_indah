@@ -29,16 +29,16 @@ class HomePage extends StatelessWidget {
           children: <Widget>[
             Container(
               width: double.infinity,
+              color: Colors.grey.shade300,
+              alignment: Alignment.center,
+              child: DiscoverPage(),
+            ),
+            Container(
+              width: double.infinity,
               color: Colors.grey,
               alignment: Alignment.center,
               child: MenuPage(),
             ),
-            Container(
-              width: double.infinity,
-              color: Colors.grey.shade300,
-              alignment: Alignment.center,
-              child: DiscoverPage(),
-            )
           ],
         ),
       ),
