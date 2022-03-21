@@ -4,9 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:indah/page/home/discover_page.dart';
 
 class HomePage extends StatelessWidget {
-  List<int> top = <int>[
-    0
-  ];
+  List<int> top = <int>[];
   List<int> bottom = <int>[
     0
   ];
