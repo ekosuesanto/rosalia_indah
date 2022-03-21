@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
           height: 40,
         ),
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: DiscoverPage(),
       ),
     );
