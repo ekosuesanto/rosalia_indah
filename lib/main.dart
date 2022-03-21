@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import "package:indah/page/home_page.dart";
+import "page/home_page.dart";
 
 void main() {
   runApp(RosaliaApps());
