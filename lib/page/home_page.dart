@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
                   alignment: Alignment.center,
                   color: Colors.blue[200 + bottom[index] % 4 * 100],
                   height: 100 + bottom[index] % 4 * 20.0,
-                  child: Text('Item: ${bottom[index]}'),
+                  child: DiscoverPage(),
                 );
               },
               childCount: bottom.length,
