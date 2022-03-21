@@ -35,9 +35,23 @@ class HomePage extends StatelessWidget {
                   child: DiscoverPage(),
                 );
               },
-              childCount: 1,
+              childCount: top.length,
             ),
-          )
+          ),
+          SliverList(
+            key: centerKey,
+            delegate: SliverChildBuilderDelegate(
+              (BuildContext context, int index) {
+                return Container(
+                  alignment: Alignment.center,
+                  color: Colors.blue[200 + bottom[index] % 4 * 100],
+                  height: 100 + bottom[index] % 4 * 20.0,
+                  child: Text('Item: ${bottom[index]}'),
+                );
+              },
+              childCount: bottom.length,
+            ),
+          ),
         ],
       ),
     );
