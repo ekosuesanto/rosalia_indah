@@ -33,12 +33,12 @@ class HomePage extends StatelessWidget {
               (BuildContext context, int index) {
                 return Container(
                   alignment: Alignment.center,
-                  color: Colors.blue[200 + bottom[index] % 4 * 100],
-                  height: 100 + bottom[index] % 4 * 20.0,
-                  child: DiscoverPage(),
+                  color: Colors.blue[200 + top[index] % 4 * 100],
+                  height: 100 + top[index] % 4 * 20.0,
+                  child: MenuPage(),
                 );
               },
-              childCount: bottom.length,
+              childCount: top.length,
             ),
           ),
           SliverList(
@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget {
                   alignment: Alignment.center,
                   color: Colors.blue[200 + bottom[index] % 4 * 100],
                   height: 100 + bottom[index] % 4 * 20.0,
-                  child: MenuPage(),
+                  child: DiscoverPage(),
                 );
               },
               childCount: bottom.length,
