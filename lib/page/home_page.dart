@@ -26,7 +26,12 @@ class HomePage extends StatelessWidget {
           SliverList(
             delegate: SliverChildBuilderDelegate(
               (BuildContext context, int index) {
-                return DiscoverPage();
+                return Container(
+                  alignment: Alignment.center,
+                  color: Colors.blue[200 + top[index] % 4 * 100],
+                  height: 100 + top[index] % 4 * 20.0,
+                  child: DiscoverPage(),
+                );
               },
               childCount: top.length,
             ),
