@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
     const Key centerKey = ValueKey<String>('bottom-sliver-list');
     return Scaffold(
       appBar:PreferredSize(
-          preferredSize: Size.fromHeight(50.0), // here the desired height
+          preferredSize: Size.fromHeight(100.0), // here the desired height
           child:AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
