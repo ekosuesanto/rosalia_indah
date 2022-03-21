@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'https://flutlab.io/root/app/lib/page/home/discover_page.dart';
+import 'package:indah/page/home/discover_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
