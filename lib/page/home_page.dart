@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'package:indah/page/home/discover_page.dart';
+import 'home/discover_page.dart';
+
+import 'home/menu_page.dart';
 
 class HomePage extends StatelessWidget {
   List<int> top = <int>[
@@ -34,6 +36,20 @@ class HomePage extends StatelessWidget {
                   color: Colors.blue[200 + bottom[index] % 4 * 100],
                   height: 100 + bottom[index] % 4 * 20.0,
                   child: DiscoverPage(),
+                );
+              },
+              childCount: bottom.length,
+            ),
+          ),
+          SliverList(
+            key: centerKey,
+            delegate: SliverChildBuilderDelegate(
+              (BuildContext context, int index) {
+                return Container(
+                  alignment: Alignment.center,
+                  color: Colors.blue[200 + bottom[index] % 4 * 100],
+                  height: 100 + bottom[index] % 4 * 20.0,
+                  child: MenuPage(),
                 );
               },
               childCount: bottom.length,
